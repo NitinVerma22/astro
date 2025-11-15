@@ -349,13 +349,13 @@ export default function QuotationGenerator() {
           <div className="p-8">
             <div className="mb-6 bg-blue-50 p-6 rounded-lg border-2 border-blue-200">
               <h3 className="text-lg font-bold text-blue-800 mb-2">
-                Selected Package: {packages[selectedPackage].name}
+                Selected Package: {packages[selectedPackage!].name}
               </h3>
-              <p className="text-gray-600 text-sm mb-3">{packages[selectedPackage].description}</p>
+              <p className="text-gray-600 text-sm mb-3">{packages[selectedPackage!].description}</p>
               <div className="flex justify-between items-center">
                 <span className="text-gray-700 font-medium">Base Package Price:</span>
                 <span className="text-2xl font-bold text-blue-600">
-                  ₹{packages[selectedPackage].basePrice.toLocaleString('en-IN')}
+                  ₹{packages[selectedPackage!].basePrice.toLocaleString('en-IN')}
                 </span>
               </div>
             </div>
