@@ -30,7 +30,7 @@ interface Packages {
   [key: string]: PackageDetails;
 }
 
-type SelectedPackageKey = keyof typeof packages | null;
+type SelectedPackageKey = keyof Packages | null;
 
 interface SelectedFeatures {
   [featureId: string]: number; // 0 = free (included)
